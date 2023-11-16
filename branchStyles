@@ -1,0 +1,93 @@
+.branchurl, .branchfax {
+    	display: none;
+    }
+    .branchaddress, .branchphone {
+    	text-align: center;
+    }
+    
+    #events > div > h1 {
+    	margin-top: 0px !important;
+    }
+    #topRow > h1 {
+    	background: aliceblue;
+    }
+    .hours {
+    	display: table;
+    }
+    .hours-row {
+    	display: table-row;
+    }
+    .hours-row div {
+    	display: table-cell;
+    	padding: 3px;
+    }
+    
+    #events * {
+      font-family: gotham !important;   
+      line-height: normal !important;
+      margin: revert !important;      
+    }
+    .eventLocation {
+      font-style: italic;
+      font-weight: 500;
+      color: orange !important;  
+      font-size:16px;
+    }
+    .eventDescription, .eventDescription * {
+      color: black !important;
+      font-size: 18px !important;      
+    }
+    h2 {
+      color: black !important;  
+      text-decoration: none;    
+      margin-bottom: 0;      
+    }
+    .newsBody > a {      
+      text-decoration: none;          
+    }
+    .eventTime {
+      font-weight: 500;
+      margin-bottom: -10px;
+    }
+    .moreLink > a {
+      text-decoration: none;  
+      color: orange;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    @media print and (max-width: 10cm) {           
+      #events * {
+        font-family: Arial, Helvetica, sans-serif !important;            
+      }
+      .moreLink, .newsContainerNoPrint {
+        visibility: hidden;
+        display: none;
+      }      
+      .eventLocation {
+        color: black !important;
+        font-style: normal;
+      }
+      .eventDescription, .eventDescription * {
+        font-weight: 500 !important;
+        /*font-size: 20px !important;*/
+    }
+    }
+
+    @media print and (min-width: 10cm) {           
+      #events * {
+        /*font-family: Arial, Helvetica, sans-serif !important;*/
+      }
+      .moreLink, .newsContainerNoPrint {
+        visibility: hidden;
+        display: none;
+      }      
+      .eventLocation {
+        /*color: black !important;
+        font-style: normal;*/
+      }
+      .eventDescription, .eventDescription * {
+        /*font-weight: 500 !important;
+        font-size: 30px !important;*/   
+    }
+    }
