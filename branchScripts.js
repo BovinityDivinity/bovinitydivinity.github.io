@@ -8,3 +8,5 @@ $("#library_info > h1").addClass("col-md-4");
 $("#library_info > h1").css("text-align", "center");
 $("#library_info > h1").insertBefore("#topRow > h1");
 $(".library_description").css("display", "grid");
+$(".library_description").prepend($("#desGrid2"));
+$(".library_description").prepend($("#desGrid1"));
